@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+
+:root{
+    --primary-color: yellow;
+    --secondary-color: black;
+    --tertiary-color: white;
+    --hover-color: #3A4750;
+
+    --fonte-principal: "montserrat", sans-serif;
+    --fonte-secundaria: "Questrial", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    
+}
+
+.HeaderA {
+    padding: 2% 0% 0% 15%;
+    
+}
+
+.Header__main {
+    display: flex;
+    gap: 80px;
+}
+
+.Header__main__link {
+    color: var(--primary-color);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.Header__main__link:hover {
+    color: var(--quaternary-color);
+}
+
+.Business {
+    padding: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.Business__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Business__content__title {
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Business__name {
+    color: var(--primary-color);
+    font-size: 2.625rem;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Business__content__text {
+    font-size: 1.625rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Business__Link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.Business__content__subtitle {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.Business__Link__button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--primary-color);
+    width: 50%;
+    font-size: 1.625rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "Questrial", sans-serif;
+    font-weight: 600;
+}
+
+.Business__Link__button:hover {
+    background-color: var(--hover-color);
+}
+
+.Business__img{
+    width: 50%
+}
+
+.rodape {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 28px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1080px) {
+    
+    .HeaderA {
+        padding: 10%;
+    }
+    
+    .Header__main {
+        justify-content: center;
+    }
+    
+    .Business {
+        flex-direction: column-reverse;
+    }
+
+    .Business__content {
+        width: auto;
+    }
+}
